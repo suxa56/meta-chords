@@ -5,7 +5,11 @@ package uz.suxa.metachords.ui
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -31,7 +35,11 @@ fun MetaApp() {
             color = MaterialTheme.colorScheme.background
         ) {
             Scaffold() {
-
+                Column(modifier = Modifier.padding(it)) {
+                    IconButton(onClick = { /*TODO*/ }) {
+                        Icon(imageVector = Icons.Filled.AccountBox, contentDescription = "")
+                    }
+                }
             }
         }
     }
